@@ -1,0 +1,204 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #fefcfc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    background-color: #fde5e5;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.logo h1{
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #e77d7a, #f1c27d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #3e3e3e;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+    color: #e77d7a;
+}
+
+.btn-agendar{
+    background-color: #e77d7a;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-agendar:hover{
+    background-color: #d96363;
+}
+
+.inicio{
+    background: url("img/unhas-fundo.jpg") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #3e3e3e;
+    position: relative;
+}
+
+.inicio::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 245, 245, 0.75);
+}
+
+.inicio-content{
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin-left: 60px;
+}
+
+.inicio-content h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2a2a2a;
+    line-height: 1.2;
+}
+
+.inicio-content h1 span{
+    background: linear-gradient(90deg, #e77d7a, #f1c27d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inicio-content p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #4d4d4d;
+    line-height: 1.6;
+}
+
+.btn-agendar-horario{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+    background-color: #e77d7a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(231, 125, 122, 0.3s);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-agendar-horario:hover{
+    background-color: #d96363;
+    transform: translateY(-3px);
+}
+
+.btn-agendar-horario img{
+    width: 18px;
+    height: 18px;
+}
+
+.servicos{
+    background-color: #fff8f8;
+    text-align: center;
+    padding: 100px 60px;
+}
+
+.servicos-container h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: 2a2a2a;
+}
+
+.servicos-container p{
+    color: #6e6e6e;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.cards-servicos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.card{
+    background-color: #fff;
+    border: 2px solid #f1eaea;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    padding: 30px 20px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    border-color: #f3a7a5;
+    box-shadow: 0 8px 18px rgba(231, 125, 122, 0.2);
+    transform: translateY(-6px);
+}
+
+.card .icon{
+    background-color: #fde8e8;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.card .icon img{
+    width: 28px;
+    height: 28px;
+    filter: invert(47%) sepia(63%) saturate(503%) hue-rotate(320deg) brightness(102%) contrast(96%);
+}
+
+.card h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2a2a2a;
+}
+
+.card p{
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
