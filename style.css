@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
 }
 
@@ -329,8 +329,12 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .contato-form{
@@ -340,12 +344,12 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 320px;
-    max-width: 450px;
+    max-width: 400px;
     text-align: left;
 }
 
 .contato-form label{
-    font-weight: 600;
+    font-weight: 500;
     color: #333;
     display: block;
     margin-top: 15px;
@@ -706,13 +710,19 @@
     .contato-form,
     .contato-info{
         width: 100%;
-        max-width: 400px;
+        max-width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
 
+    .contato-form input,
+    .contato-form textarea {
+        font-size: 1rem;
     }
 
     .info-card{
         text-align: left;
-        padding: 18px;
+        padding: 20px 20px 0;
         border-radius: 12px;
     }
 
@@ -805,8 +815,17 @@
         font-size: 1.1rem;
     }
 
+    .contato-container{
+        padding: 0;
+        gap: 15px;
+    }
+
     .contato-form{
-        padding: 20px;
+        padding: 15px;
+    }
+
+    .info-card{
+        padding: 15px 15px 0;
     }
 
     .icon{
