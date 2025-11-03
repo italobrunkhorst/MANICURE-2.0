@@ -234,6 +234,18 @@
     line-height: 1.5;
 }
 
+.preco{
+    display: inline-block;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #f57a8b, #ee637d);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
 .trabalhos{
     text-align: center;
     padding: 80px 20px;
