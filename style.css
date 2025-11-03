@@ -397,12 +397,13 @@
 
 .info-card{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background: #fff;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 15px;
 }
 
 .info-card:hover{
@@ -419,13 +420,21 @@
     margin-right: 15px;
 }
 
+.icon img{
+    width: 28px;
+    height: 28px;
+    filter: invert(47%) sepia(63%) saturate(503%) hue-rotate(320deg) brightness(102%) contrast(96%);
+}
+
 .info-card h3{
+    text-align: start;
     margin: 0;
     font-size: 1.1rem;
     color: #333;
 }
 
 .info-card p{
+    text-align: start;
     margin: 5px 0 0;
     color: #777;
     font-size: 0.95rem;
@@ -702,8 +711,6 @@
     }
 
     .info-card{
-        flex-direction: column;
-        align-items: flex-start;
         text-align: left;
         padding: 18px;
         border-radius: 12px;
@@ -715,10 +722,12 @@
     }
 
     .info-card h3{
+        padding-left: 10px;
         font-size: 1rem;
     }
 
     .info-card p{
+        padding-left: 10px;
         font-size: 0.9rem;
     }
 
@@ -800,14 +809,15 @@
         padding: 20px;
     }
 
-    .info-card{
-        flex-direction: column;
-        text-align: center;
-    }
-
     .icon{
+        display: flex;
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .icon img{
+        width: 24px;
+        height: 24px;
     }
 
     .footer{
