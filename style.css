@@ -228,6 +228,20 @@
     color: #2a2a2a;
 }
 
+.toggle-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #ee637d;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.conteudo{
+    display: block;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
 .card p{
     font-size: 1.1rem;
     color: #555;
@@ -678,9 +692,49 @@
     }
 
     .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         max-width: 320px;
         margin: 0 auto;
+        padding: 15px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        background-color: #fff;
+    }
+    
+    .card-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .toggle-btn{
+        display: block;
+        margin: 8px auto;
+    }
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        margin-top: 10px;
+    }
+
+    .card.ativo .conteudo{
+        max-height: 250px;
+        opacity: 1;
+    }
+
+    .card.ativo .toggle-btn{
+        transform: rotate(180deg);
     }
 
     .titulo-trabalhos{

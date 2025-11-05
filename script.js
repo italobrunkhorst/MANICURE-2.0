@@ -1,10 +1,9 @@
 document.getElementById('whatsappForm').addEventListener('submit', function(e) {
         e.preventDefault();
         const nome = document.getElementById('nome').value;
-        const telefone = document.getElementById('telefone').value;
         const mensagem = document.getElementById('mensagem').value;
 
-        const texto = `Olá, meu nome é ${nome}. Meu telefone é ${telefone}. %0A${mensagem}`;
+        const texto = `Olá, meu nome é ${nome}. %0A${mensagem}`;
         const numero = "5541985222889";
         const url = `https://wa.me/${numero}?text=${texto}`;
 
@@ -33,3 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.querySelectorAll('.toggle-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.card');
+    card.classList.toggle('ativo');
+  });
+});
